@@ -1,0 +1,75 @@
+@use '../../../styles.scss' as styles;
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    padding: 20px;
+    max-width: 1300px;
+
+    h1{
+        font-family: styles.$font-family-primary;
+        color: styles.$Logo-color-Laranja;
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    li {
+        font-weight: 400;
+        font-size: 14px;
+        color: styles.$primary-text;
+        position: relative;
+        padding-bottom: 5px;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: styles.$Logo-color-Laranja;
+            transition: width 0.3s 0.15s;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+    
+    .botoes {
+    display: flex;
+    gap: 10px;
+    .botoes_ass,
+    .botoes_login {
+        @include styles.styleBotao();
+        transition: transform 0.15s cubic-bezier(0.4, 0.2, 0.2, 1); 
+    }
+    .botoes_ass {
+        background-color: styles.$Logo-color-Azul;
+        color: styles.$background-color;
+        box-shadow: 0px 4px 4px #00000040;
+    }
+    .botoes_login {
+        border: 1px solid styles.$Logo-color-Azul;
+        background-color: styles.$background-color;
+        box-shadow: 0px 4px 4px #00000040;
+    }
+    .botoes_ass:hover,
+    .botoes_login:hover {
+        transform: translateY(-4px) scale(1.05);
+    }
+}
+}
