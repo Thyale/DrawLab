@@ -5,9 +5,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:auto;
-    padding: 20px;
-    max-width: 1300px;
+    @include styles.ConfigWidthCards();
 
     h1{
         font-family: styles.$font-family-primary;

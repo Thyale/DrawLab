@@ -15,6 +15,13 @@ $font-family-secondary: "Roboto", sans-serif;
 
 /*mixins Sass*/
 
+@mixin ConfigWidthCards(){
+    width: 100vw;
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+}
+
 @mixin styleBotao(){
     padding: 10px 20px;
     border-radius: 20px;
