@@ -59,6 +59,9 @@ header{
         background-color: styles.$Logo-color-Azul;
         color: styles.$background-color;
         box-shadow: 0px 4px 4px #00000040;
+        &:hover{
+            background-color: darken(styles.$Logo-color-Azul, 10%);
+        }
     }
     .botoes_login {
         border: 1px solid styles.$Logo-color-Azul;
@@ -67,7 +70,7 @@ header{
     }
     .botoes_ass:hover,
     .botoes_login:hover {
-        transform: translateY(-4px) scale(1.05);
+        transform: translateY(-3px) scale(1.05);
     }
 }
 }

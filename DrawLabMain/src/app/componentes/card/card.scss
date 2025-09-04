@@ -1,10 +1,65 @@
 @use '../../../styles.scss' as styles;
 
-.cardInicial{
-    @include styles.ConfigWidthCards();
-    margin-top: 50px;
-    background-color: styles.$Logo-color-Azul;
-    color: styles.$background-color;
-    border-radius: 20px;
-}
+.cardInicial {
+  @include styles.ConfigWidthCards();
+  background-image: url('../../images/ImgCardDesenhoDigital.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  align-items: start;
+  height: 400px;
+  background-color: styles.$Logo-color-Azul;
+  color: styles.$background-color;
+  border-radius: 20px;
+  position: relative;
 
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: styles.$Logo-color-Azul;
+    opacity: 0.6;
+    border-radius: 20px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  div {
+    padding: 0px 20px;
+    h2,
+    p,
+    button {
+      position: relative;
+      z-index: 2;
+    }
+
+    h2 {
+      font-size: 52px;
+      width: 100%;
+      max-width: 700px;
+    }
+    p {
+      font-size: 16px;
+      width: 100%;
+      max-width: 700px;
+      margin: 20px 0;
+    }
+    button {
+      @include styles.styleBotao();
+      background-color: styles.$Logo-color-Vermelho;
+      color: styles.$background-color;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken(styles.$Logo-color-Vermelho, 10%);
+      }
+    }
+  }
+}
