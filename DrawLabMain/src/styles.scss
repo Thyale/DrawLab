@@ -13,13 +13,14 @@ $Logo-color-Amarelo: #FFF5D0;
 $font-family-primary: "Montserrat", sans-serif;
 $font-family-secondary: "Roboto", sans-serif;
 
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 900px;
+
 /*mixins Sass*/
 
 @mixin ConfigWidthCards(){
-    width: 100vw;
     max-width: 1300px;
     margin: auto;
-    padding: 20px;
 }
 
 @mixin styleBotao(){

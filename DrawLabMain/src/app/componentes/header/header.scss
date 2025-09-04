@@ -2,10 +2,10 @@
 
 header{
 
+    @include styles.ConfigWidthCards();
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include styles.ConfigWidthCards();
 
     h1{
         font-family: styles.$font-family-primary;
@@ -45,7 +45,11 @@ header{
             }
         }
     }
-}
+    }
+
+    i{
+        display: none;
+    }
     
     .botoes {
     display: flex;
@@ -72,5 +76,24 @@ header{
     .botoes_login:hover {
         transform: translateY(-3px) scale(1.05);
     }
-}
+    }
+
+    @media (max-width: #{styles.$breakpoint-tablet}) {
+        ul{
+            display: none;
+        }
+    }
+
+    @media (max-width: #{styles.$breakpoint-mobile}) {
+        ul, .botoes_ass, .botoes_login{
+            display: none;
+        }
+        i{
+        display: flex;
+        font-size: 20px;
+        padding: 20px;
+        color: styles.$Logo-color-Azul;
+        cursor: pointer;
+        }
+    }
 }

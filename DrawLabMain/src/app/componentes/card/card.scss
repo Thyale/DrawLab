@@ -10,7 +10,7 @@
   justify-content: center;
   background-size: cover;
   align-items: start;
-  height: 400px;
+  padding: 6em 20px; 
   background-color: styles.$Logo-color-Azul;
   color: styles.$background-color;
   border-radius: 20px;
@@ -30,8 +30,6 @@
     z-index: 1;
   }
 
-  div {
-    padding: 0px 20px;
     h2,
     p,
     button {
@@ -60,6 +58,24 @@
       &:hover {
         background-color: darken(styles.$Logo-color-Vermelho, 10%);
       }
+  }
+
+  @media (max-width: #{styles.$breakpoint-tablet}) {
+    padding: 4em 20px; 
+  }
+
+  @media (max-width: #{styles.$breakpoint-mobile}) {
+    padding: 3em 20px; 
+    h2 {
+      font-size: 32px;
+      width: 100%;
+      max-width: 700px;
+    }
+    p {
+      font-size: 14px;
+      width: 100%;
+      max-width: 700px;
+      margin: 20px 0;
     }
   }
 }
