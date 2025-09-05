@@ -1,0 +1,6 @@
+@use '../../../styles.scss' as styles;
+
+.programas-container{
+    @include styles.ConfigWidthCards();
+    background-color: aquamarine;
+}
