@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { ProgramasDiv } from '../programas-div/programas-div';
 
 @Component({
   selector: 'app-programas',
-  imports: [],
+  imports: [ProgramasDiv],
   templateUrl: './programas.html',
   styleUrl: './programas.scss'
 })

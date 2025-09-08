@@ -2,5 +2,28 @@
 
 .programas-container{
     @include styles.ConfigWidthCards();
-    background-color: aquamarine;
+
+    h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: styles.$font-family-primary;
+        padding-left: 10px;
+        border-left: 2px solid styles.$Logo-color-Laranja;
+        color: styles.$primary-text;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        max-width: 800px;
+        color: styles.$secondary-text;
+    }
+
+    .programas-lista{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
 }
