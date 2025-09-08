@@ -1,7 +1,7 @@
-<div class="programa-card">
+<div class="programa-card" (click)="toggleDescricao()">
   <div>
     <h3>{{ titulo }}</h3>
     <i class="fa-solid fa-chevron-down"></i>
   </div>
-  <p>{{ descricao }}</p>
+  <p *ngIf="mostrarDescricao">{{ descricao }}</p>
 </div>

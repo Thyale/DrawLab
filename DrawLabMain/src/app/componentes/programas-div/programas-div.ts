@@ -1,4 +1,4 @@
-import { Component, Input, signal } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-programas-div',
@@ -11,4 +11,9 @@ export class ProgramasDiv {
   @Input() titulo: string = '';
   @Input() descricao: string = '';
 
+  mostrarDescricao = false;
+
+  toggleDescricao() {
+    this.mostrarDescricao = !this.mostrarDescricao;
+  }
 }
