@@ -2,24 +2,4 @@
 
 
 .programa-card{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-
-    div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        h3, i{
-            color: styles.$Logo-color-Azul;
-        }
-    }
-
-    p{
-        color: styles.$secondary-text;
-    }
 }

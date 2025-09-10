@@ -2,7 +2,7 @@
 
 .cardInicial {
   @include styles.ConfigWidthCards();
-  background-image: url('../../images/ImgCardDesenhoDigital.jpg');
+  background-image: url('../../assets/ImgCardDesenhoDigital.jpg');
   background-repeat: no-repeat;
   background-position: center;
   display: flex;

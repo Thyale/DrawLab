@@ -1,7 +1,5 @@
-<div class="programa-card" (click)="toggleDescricao()">
-  <div>
-    <h3>{{ titulo }}</h3>
-    <i class="fa-solid fa-chevron-down"></i>
-  </div>
-  <p *ngIf="mostrarDescricao">{{ descricao }}</p>
+<div class="programa-card">
+  <img [src]="imagem" alt="img nao aparee">
+  <h3>{{ titulo }}</h3>
+  <p>{{ descricao }}</p>
 </div>

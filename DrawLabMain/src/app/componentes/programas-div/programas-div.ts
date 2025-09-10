@@ -10,10 +10,6 @@ export class ProgramasDiv {
 
   @Input() titulo: string = '';
   @Input() descricao: string = '';
-
-  mostrarDescricao = false;
-
-  toggleDescricao() {
-    this.mostrarDescricao = !this.mostrarDescricao;
-  }
+  @Input() imagem: string = '';
+  
 }
