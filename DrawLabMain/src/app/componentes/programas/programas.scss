@@ -33,7 +33,7 @@
                 position: absolute;
                 top: 0; left: 0; right: 0; bottom: 0;
                 background: styles.$Logo-color-Azul;
-                opacity: 0.5;
+                opacity: 0.6;
                 border-radius: 20px;
                 pointer-events: none;
             }
@@ -45,7 +45,7 @@
 
             h3{
                 font-family: styles.$font-family-primary;
-                color: styles.$Logo-color-Amarelo;
+                color: white;
             }
         }
 
