@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss'
 })
 export class Header {
+ destacarSecao(event: Event, secaoId: string) {
+  event.preventDefault();
+  const el = document.getElementById(secaoId);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 }

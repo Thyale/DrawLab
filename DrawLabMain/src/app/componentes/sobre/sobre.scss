@@ -1,0 +1,43 @@
+@use '../../../styles.scss' as styles;
+
+.sobre-container{
+    @include styles.ConfigWidthCards();
+
+    h2{
+        @include styles.styleH2titulos();
+    }
+
+    .sobre-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        img{
+            width: 100%;
+            max-width: 500px;
+        }
+
+        p{
+            color: styles.$secondary-text;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 500px
+        }
+    }
+
+    @media (max-width: #{styles.$breakpoint-mobile}) {
+        .sobre-content{
+            flex-direction: column-reverse;
+        }
+    }
+}

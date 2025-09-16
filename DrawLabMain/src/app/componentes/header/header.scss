@@ -18,8 +18,9 @@ header{
     display: flex;
     list-style: none;
     gap: 20px;
-    li {
+    a {
         font-weight: 400;
+        text-decoration: none;
         font-size: 14px;
         color: styles.$primary-text;
         position: relative;

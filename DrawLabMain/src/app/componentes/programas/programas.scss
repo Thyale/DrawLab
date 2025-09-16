@@ -4,19 +4,11 @@
     @include styles.ConfigWidthCards();
 
     h2{
-        font-size: 24px;
-        margin-bottom: 10px;
-        font-family: styles.$font-family-primary;
-        padding-left: 10px;
-        border-left: 2px solid styles.$Logo-color-Laranja;
-        color: styles.$primary-text;
+        @include styles.styleH2titulos();
     }
 
     p{
-        font-size: 14px;
-        font-weight: 400;
-        max-width: 800px;
-        color: styles.$secondary-text;
+        @include styles.stylePsubtitulos();
     }
 
     .programas-lista {
@@ -59,19 +51,19 @@
 
         .programa-card-iniciante {
             @extend .programa-card-base;
-            background-image: url('../../assets/ImgIniciante.jpg');
+            background-image: url('../../../../public/ImgIniciante.jpg');
         }
         .programa-card-Intermediario {
             @extend .programa-card-base;
-            background-image: url('../../assets/ImgIntermediario.jpg');
+            background-image: url('../../../../public/ImgIntermediario.jpg');
         }
         .programa-card-Avancado {
             @extend .programa-card-base;
-            background-image: url('../../assets/ImgAvancado.jpg');
+            background-image: url('../../../../public/ImgAvancado.jpg');
         }
         .programa-card-Workshops{
             @extend .programa-card-base;
-            background-image: url('../../assets/ImgWorkshops.jpg');
+            background-image: url('../../../../public/ImgWorkshops.jpg');
         }
 
     }

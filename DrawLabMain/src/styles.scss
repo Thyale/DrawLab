@@ -30,6 +30,22 @@ $breakpoint-tablet: 900px;
     cursor: pointer;
 }
 
+@mixin styleH2titulos(){
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: $font-family-primary;
+    padding-left: 10px;
+    border-left: 2px solid $Logo-color-Laranja;
+    color: $primary-text;
+}
+
+@mixin stylePsubtitulos(){
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 800px;
+    color: $secondary-text;
+}
+
 /*Main Sass*/
 
 *{
