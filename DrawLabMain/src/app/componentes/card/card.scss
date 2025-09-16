@@ -12,7 +12,7 @@
   align-items: start;
   padding: 6em 20px; 
   background-color: styles.$Logo-color-Azul;
-  color: styles.$background-color;
+  color: white;
   border-radius: 20px;
   position: relative;
 
@@ -51,7 +51,7 @@
     button {
       @include styles.styleBotao();
       background-color: styles.$Logo-color-Vermelho;
-      color: styles.$background-color;
+      color: white;
       font-size: 14px;
       transition: background-color 0.3s ease;
 

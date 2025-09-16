@@ -38,14 +38,16 @@
                 pointer-events: none;
             }
 
-            h3,p{
-                z-index: 1;
-                color: styles.$background-color;
-            }
-
             h3{
+                z-index: 1;
                 font-family: styles.$font-family-primary;
                 color: white;
+            }
+
+            p{
+                z-index: 1;
+                color: white;
+                font-weight: 200
             }
         }
 
