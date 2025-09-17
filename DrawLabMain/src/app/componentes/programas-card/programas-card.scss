@@ -1,0 +1,76 @@
+@use '../../../styles.scss' as styles;
+
+.programa-card-base {
+  max-width: 300px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: styles.$Logo-color-Azul;
+    opacity: 0.6;
+    border-radius: 20px;
+    pointer-events: none;
+  }
+
+  h3 {
+    z-index: 1;
+    font-family: styles.$font-family-primary;
+    color: white;
+  }
+
+  p {
+    z-index: 1;
+    color: white;
+    font-weight: 200;
+  }
+  button {
+    z-index: 1;
+    background-color: styles.$Logo-color-Vermelho;
+    width: 100%;
+    max-width: 100px;
+    padding: 3px 6px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken(styles.$Logo-color-Vermelho, 10%);
+      cursor: pointer;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+}
+
+#programa-card-iniciante {
+  @extend .programa-card-base;
+  background-image: url('../../../../public/ImgIniciante.jpg');
+}
+#programa-card-Intermediario {
+  @extend .programa-card-base;
+  background-image: url('../../../../public/ImgIntermediario.jpg');
+}
+#programa-card-Avancado {
+  @extend .programa-card-base;
+  background-image: url('../../../../public/ImgAvancado.jpg');
+}
+#programa-card-Workshops {
+  @extend .programa-card-base;
+  background-image: url('../../../../public/ImgWorkshops.jpg');
+}

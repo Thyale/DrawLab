@@ -5,37 +5,25 @@
     ferramentas certas. Por isso, criamos programas completos para cada nível de aprendizado
   </p>
   <div class="programas-lista">
-    <div class="programa-card-iniciante">
-      <h3>Iniciante Criativo</h3>
-      <p>
-        Aprenda os fundamentos do desenho digital, conheça os principais softwares e dê seus
-        primeiros passos no universo criativo.
-      </p>
-      <button><a href="#">Saiba Mais</a></button>
-    </div>
-    <div class="programa-card-Intermediario">
-      <h3>Intermediário em Ação</h3>
-      <p>
-        Aprofunde suas técnicas, explore estilos diferentes e desenvolva projetos que elevam sua
-        identidade artística.
-      </p>
-      <button><a href="#">Saiba Mais</a></button>
-    </div>
-    <div class="programa-card-Avancado">
-      <h3>Avançado Profissional</h3>
-      <p>
-        Domine as ferramentas, crie portfólios profissionais e prepare-se para transformar sua arte
-        em carreira.
-      </p>
-      <button><a href="#">Saiba Mais</a></button>
-    </div>
-    <div class="programa-card-Workshops">
-      <h3>Workshops e Masterclasses</h3>
-      <p>
-        Aulas especiais com artistas convidados, trazendo novas tendências, técnicas e inspirações
-        para você evoluir constantemente.
-      </p>
-      <button><a href="#">Saiba Mais</a></button>
-    </div>
+    <app-programas-card
+      [titulo]="'Iniciante Criativo'"
+      [texto]="'Aprenda os fundamentos do desenho digital, conheça os principais softwares e dê seus primeiros passos no universo criativo'"
+      [identif]="'programa-card-iniciante'">
+    </app-programas-card>
+    <app-programas-card
+      [titulo]="'Intermediário em Ação'"
+      [texto]="'Aprofunde suas técnicas, explore estilos diferentes e desenvolva projetos que elevam sua identidade artística.'"
+      [identif]="'programa-card-Intermediario'">
+    </app-programas-card>
+    <app-programas-card
+      [titulo]="'Avançado Profissional'"
+      [texto]="'Domine as ferramentas, crie portfólios profissionais e prepare-se para transformar sua arte em carreira.'"
+      [identif]="'programa-card-Avancado'">
+    </app-programas-card>
+    <app-programas-card
+      [titulo]="'Workshops e Masterclasses'"
+      [texto]="'Aulas especiais com artistas convidados, trazendo novas tendências, técnicas e inspirações para você evoluir constantemente.'"
+      [identif]="'programa-card-Workshops'">
+    </app-programas-card>
   </div>
 </div>
