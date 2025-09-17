@@ -1,0 +1,62 @@
+@use '../../../styles.scss' as styles;
+
+.Depoimentos-card-base{
+  width: 250px;
+  height: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  transition: transform 0.15s cubic-bezier(0.4, 0.2, 0.2, 1); 
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: styles.$Logo-color-Vermelho;
+    opacity: 0.2;
+    border-radius: 20px;
+    pointer-events: none;
+  }
+  &:hover{
+    transform: translateY(-3px) scale(1.05);
+  }
+
+  h3 {
+    z-index: 1;
+    font-family: styles.$font-family-primary;
+    color: white;
+  }
+
+  p {
+    z-index: 1;
+    color: white;
+    font-weight: 200;
+  }
+}
+
+#depoimento01{
+    background-image: url(../../../../public/FtDepoimento01.jpg);
+}
+#depoimento02{
+    background-image: url(../../../../public/FtDepoimento02.jpg);
+}
+#depoimento03{
+    background-image: url(../../../../public/FtDepoimento03.jpg);
+}
+#depoimento04{
+    background-image: url(../../../../public/FtDepoimento04.jpg);
+}
+#depoimento05{
+    background-image: url(../../../../public/FtDepoimento05.jpg);
+}
+#depoimento06{
+    background-image: url(../../../../public/FtDepoimento06.jpg);
+}

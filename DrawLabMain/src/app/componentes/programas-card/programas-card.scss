@@ -59,18 +59,14 @@
 }
 
 #programa-card-iniciante {
-  @extend .programa-card-base;
   background-image: url('../../../../public/ImgIniciante.jpg');
 }
 #programa-card-Intermediario {
-  @extend .programa-card-base;
   background-image: url('../../../../public/ImgIntermediario.jpg');
 }
 #programa-card-Avancado {
-  @extend .programa-card-base;
   background-image: url('../../../../public/ImgAvancado.jpg');
 }
 #programa-card-Workshops {
-  @extend .programa-card-base;
   background-image: url('../../../../public/ImgWorkshops.jpg');
 }

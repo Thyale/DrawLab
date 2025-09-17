@@ -10,4 +10,11 @@
     p{
         @include styles.stylePsubtitulos();
     }
+
+    .Depoimentos-lista{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+    }
 }

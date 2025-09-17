@@ -1,8 +1,38 @@
 <div id="Depoimentos" class="Depoimentos-container">
   <h2>Depoimentos</h2>
   <p>
-    Mais do que palavras, são as experiências dos nossos alunos que mostram o impacto da DrawLab.
-    Conheça algumas histórias de quem já transformou sua jornada artística com a gente.
+    Mais do que palavras, são as experiências dos nossos alunos que mostram o impacto da DrawLab. Conheça algumas histórias de quem já transformou sua jornada artística com a gente.
   </p>
-  <div class="Depoimentos-lista"></div>
+  <div class="Depoimentos-lista">
+    <app-depoimentos-card
+    [nome]="'Mariana Costa'"
+    [comentario]="'`Comecei no Iniciante Criativo sem nunca ter desenhado no digital e já consigo criar minhas primeiras artes. O curso é super didático!`'"
+    [identif]="'depoimento01'">
+    </app-depoimentos-card>
+    <app-depoimentos-card
+    [nome]="'Lucas Almeida'"
+    [comentario]="'`Os workshops são incríveis! Conheci técnicas novas que deram outra cara para minhas ilustrações.`'"
+    [identif]="'depoimento02'">
+    </app-depoimentos-card>
+    <app-depoimentos-card
+    [nome]="'Rafael Nogueira'"
+    [comentario]="'`A DrawLab me ajudou a ganhar confiança. Hoje consigo mostrar minha arte sem medo e com muito orgulho.`'"
+    [identif]="'depoimento03'">
+    </app-depoimentos-card>
+    <app-depoimentos-card
+    [nome]="'Larissa Mendes'"
+    [comentario]="'`O Intermediário em Ação abriu minha mente para novos estilos e projetos. Sinto que evoluí muito como artista.`'"
+    [identif]="'depoimento04'">
+    </app-depoimentos-card>
+    <app-depoimentos-card
+    [nome]="'Camila Duarte'"
+    [comentario]="'`No Avançado Profissional consegui montar meu portfólio e me sinto pronta para transformar meu talento em carreira.`'"
+    [identif]="'depoimento05'">
+    </app-depoimentos-card>
+    <app-depoimentos-card
+    [nome]="'Diego Martins'"
+    [comentario]="'`A proposta da escola é diferente: mais do que ensinar softwares, eles incentivam a criatividade e a identidade de cada aluno.`'"
+    [identif]="'depoimento06'">
+    </app-depoimentos-card>
+  </div>
 </div>
