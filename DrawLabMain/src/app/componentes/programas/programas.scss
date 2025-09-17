@@ -49,6 +49,26 @@
                 color: white;
                 font-weight: 200
             }
+            button{
+                z-index: 1;
+                background-color: styles.$Logo-color-Vermelho;
+                width: 100%;
+                max-width: 100px;
+                padding: 3px 6px;
+                border-radius: 10px;
+                border: none;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darken(styles.$Logo-color-Vermelho, 10%);
+                    cursor: pointer;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+            }
         }
 
         .programa-card-iniciante {

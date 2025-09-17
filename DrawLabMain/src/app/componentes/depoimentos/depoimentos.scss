@@ -1,0 +1,13 @@
+@use '../../../styles.scss' as styles;
+
+.Depoimentos-container{
+    @include styles.ConfigWidthCards();
+
+    h2{
+        @include styles.styleH2titulos();
+    }
+
+    p{
+        @include styles.stylePsubtitulos();
+    }
+}
