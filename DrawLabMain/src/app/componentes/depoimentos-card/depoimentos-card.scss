@@ -60,3 +60,11 @@
 #depoimento06{
     background-image: url(../../../../public/FtDepoimento06.jpg);
 }
+
+@media (max-width: #{styles.$breakpoint-tablet}) {
+  .Depoimentos-card-base{
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  }
+}
