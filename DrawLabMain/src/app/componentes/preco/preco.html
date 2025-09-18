@@ -1,0 +1,44 @@
+<div id="Precos" class="Precos-container">
+  <h2>Preços</h2>
+  <p>
+    Na DrawLab, acreditamos que investir na sua criatividade deve ser simples e justo. <br> Por isso, criamos planos pensados para cada momento da sua jornada artística.
+  </p>
+  <div class="Precos-lista">
+    <app-preco-card
+        [titulo]="'Iniciante Criativo'"
+        [descricao]="'Ideal para quem está começando'"
+        [p1]="'Fundamentos do desenho digital'"
+        [p2]="'Introdução aos principais softwares'"
+        [p3]="'Exercícios práticos para soltar o traço'"
+        [p4]="'Acesso à comunidade de alunos'"
+        [valor]="'R$ 97/mês'">
+    </app-preco-card>
+    <app-preco-card
+        [titulo]="'Intermediário em Ação'"
+        [descricao]="'Para quem já tem base e quer evoluir'"
+        [p1]="'Técnicas avançadas de traço e pintura digital'"
+        [p2]="'Estudo de estilos diferentes'"
+        [p3]="'Projetos práticos guiados'"
+        [p4]="'Feedback individual dos professores'"
+        [valor]="'R$ 147/mês'">
+    </app-preco-card>
+    <app-preco-card
+        [titulo]="'Avançado Profissional'"
+        [descricao]="'Preparação para carreira artística'"
+        [p1]="'Criação de portfólio profissional'"
+        [p2]="'Técnicas avançadas de ilustração e design'"
+        [p3]="'Aulas sobre mercado e oportunidades'"
+        [p4]="'Mentoria exclusiva com artistas convidados'"
+        [valor]="'R$ 197/mês'">
+    </app-preco-card>
+    <app-preco-card
+        [titulo]="'Workshops & Masterclasses'"
+        [descricao]="'Conteúdo extra e sempre atualizado'"
+        [p1]="'Aulas especiais com artistas renomados'"
+        [p2]="'Tendências do mercado criativo'"
+        [p3]="'Técnicas exclusivas e experimentais'"
+        [p4]="'Certificado por participação'"
+        [valor]="'R$ 297'">
+    </app-preco-card>
+  </div>
+</div>

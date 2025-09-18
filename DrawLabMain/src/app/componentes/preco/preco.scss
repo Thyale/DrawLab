@@ -1,0 +1,36 @@
+@use '../../../styles.scss' as styles;
+
+.Precos-container{
+    @include styles.ConfigWidthCards();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: styles.$font-family-primary;
+        padding: 0px 20px 10px 20px;
+        border-bottom: 2px solid styles.$Logo-color-Laranja;
+        color: styles.$primary-text;
+    }
+
+    p{
+        @include styles.stylePsubtitulos();
+        text-align: center;
+    }
+    
+    .Precos-lista {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        justify-content: center;
+    }
+
+}

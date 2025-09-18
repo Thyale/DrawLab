@@ -4,10 +4,11 @@ import { Card } from "./componentes/card/card";
 import { Programas } from './componentes/programas/programas';
 import { Sobre } from './componentes/sobre/sobre';
 import { Depoimentos } from "./componentes/depoimentos/depoimentos";
+import { Preco } from "./componentes/preco/preco";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Card, Programas, Sobre, Depoimentos],
+  imports: [Header, Card, Programas, Sobre, Depoimentos, Preco],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
