@@ -1,43 +1,46 @@
 @use '../../../styles.scss' as styles;
 
 .Depoimentos-card-base{
-  width: 250px;
-  height: 350px;
+  width: 300px;
+  height: 200px;
   padding: 20px;
   border-radius: 20px;
   gap: 10px;
-  background-size: cover;
-  background-position: center;
+  border: 1px solid styles.$Logo-color-Azul;
+  color: styles.$Logo-color-Azul;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
   transition: transform 0.15s cubic-bezier(0.4, 0.2, 0.2, 1); 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: styles.$Logo-color-Vermelho;
-    opacity: 0.2;
-    border-radius: 20px;
-    pointer-events: none;
-  }
   &:hover{
     transform: translateY(-3px) scale(1.05);
   }
 
-  h3 {
-    z-index: 1;
+  .Depoimentos-card-base-img{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    border: 1px solid styles.$Logo-color-Laranja;
+  }
+
+  div{
+    display: flex;
+    flex-direction: column;
+    h3 {
     font-family: styles.$font-family-primary;
-    color: white;
+  }
+  p{
+    font-size: 12px;
+    color: styles.$Logo-color-Laranja;
+  }
+  }
+
+  h3 {
+    font-family: styles.$font-family-primary;
   }
 
   p {
-    z-index: 1;
-    color: white;
     font-weight: 200;
   }
 }
@@ -63,8 +66,6 @@
 
 @media (max-width: #{styles.$breakpoint-tablet}) {
   .Depoimentos-card-base{
-  width: 200px;
-  height: 300px;
   padding: 20px;
   }
 }

@@ -10,4 +10,5 @@ export class DepoimentosCard {
   @Input() nome!: string;
   @Input() comentario!: string;
   @Input() identif!: string;
+  @Input() profissao!: string;
 }

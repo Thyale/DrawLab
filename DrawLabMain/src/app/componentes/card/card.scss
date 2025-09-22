@@ -2,40 +2,13 @@
 
 .cardInicial {
   @include styles.ConfigWidthCards();
-  background-image: url('../../../../public/ImgCardDesenhoDigital.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-size: cover;
   align-items: start;
   padding: 6em 20px; 
-  background-color: styles.$Logo-color-Azul;
-  color: white;
+  color: styles.$Logo-color-Azul;
   border-radius: 20px;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: styles.$Logo-color-Azul;
-    opacity: 0.6;
-    border-radius: 20px;
-    pointer-events: none;
-    z-index: 1;
-  }
-
-    h2,
-    p,
-    button {
-      position: relative;
-      z-index: 2;
-    }
 
     h2 {
       font-size: 52px;
