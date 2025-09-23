@@ -1,1 +1,44 @@
-<p>contato works!</p>
+<div id="Contato" class="Contato-container">
+  <div class="Contato-div-texto">
+    <h2>Contato</h2>
+    <p>ahsdlajhdaljdhlasjdhlasjhdaljsdhlash</p>
+  </div>
+
+  <div class="Contato-div-formulario">
+    <form>
+      <div class="Inputs-Nome-Sobrenome">
+        <div>
+          <label for="Nome">Nome <strong>*</strong></label>
+          <input placeholder="Primeiro Nome" required type="text" name="Nome" id="Nome" />
+        </div>
+        <div>
+          <label for="Sobrenome">Sobrenome <strong>*</strong></label>
+          <input placeholder="Sobrenome" required type="text" name="Sobrenome" id="Sobrenome" />
+        </div>
+      </div>
+
+      <div class="Input-email">
+        <label for="Email">Email <strong>*</strong></label>
+        <input placeholder="Melhor Email" required type="email" name="Email" id="Email" />
+      </div>
+
+      <div class="Input-Number">
+        <label for="Number">Telefone <strong>*</strong></label>
+        <input placeholder="Telefone para contato" required type="text" name="Number" id="Number" />
+      </div>
+
+      <div class="Input-selectCurso">
+        <label for="Curso">Curso de Interesse <strong>*</strong></label>
+        <select id="Curso" name="Curso" required>
+          <option value="" disabled selected>-- Selecione --</option>
+          <option value="item1">Iniciante Criativo</option>
+          <option value="item2">Intermediário em Ação</option>
+          <option value="item3">Avançado Profissional</option>
+          <option value="item4">Workshops & Masterclasses</option>
+        </select>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
