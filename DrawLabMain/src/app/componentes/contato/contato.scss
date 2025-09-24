@@ -2,38 +2,51 @@
 
 .Contato-container {
   @include styles.ConfigWidthCards();
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(90deg, #0f222d, #1d3b50);
+  padding: 4em 20px;
+  border-radius: 20px;
+  color: white;
   gap: 24px;
 
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
   .Contato-div-texto {
+    max-width: 600px;
+
     h2 {
-      @include styles.styleH2titulos();
+      font-size: 32px;
+      font-family: styles.$font-family-primary;
+      margin-bottom: 12px;
+      color: white;
+    }
+    .Contato-div-texto-Subtexto {
+      margin-bottom: 24px;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.729);
     }
 
-    p {
-      @include styles.stylePsubtitulos();
+    .Contato-div-texto-textFone {
+      font-size: 14px;
+      font-weight: 200;
+    }
+
+    .Contato-div-texto-telefone {
+      font-size: 24px;
+      margin-top: 12px;
     }
   }
 
   .Contato-div-formulario {
-    background-color: styles.$Logo-color-Azul;
-    color: white;
-    padding: 4em 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    max-width: 600px;
 
     form {
-      width: 100%;
-      max-width: 500px;
       padding: 10px;
       display: flex;
       flex-direction: column;
       gap: 12px;
-
       div {
         display: flex;
         flex-direction: column;
@@ -41,8 +54,6 @@
       }
 
       label {
-        border-left: 1px solid styles.$Logo-color-Vermelho;
-        padding: 2px 10px;
         display: flex;
         gap: 2px;
         strong {
@@ -54,10 +65,25 @@
       input,
       select {
         border: none;
+        border-bottom: 1px solid styles.$Logo-color-Vermelho;
         padding: 10px;
-        border-radius: 4px;
+        background-color: transparent;
+        border-radius: 0;
+        color: white;
         margin-top: 5px;
         outline: none;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+
+      select {
+        option {
+          background-color: #0f222d;
+          color: white;
+          border: none;
+        }
       }
 
       button {
@@ -73,10 +99,10 @@
           cursor: pointer;
         }
       }
-
       .Inputs-Nome-Sobrenome {
         display: flex;
         flex-direction: row;
+        gap: 12px;
         justify-content: space-between;
         div {
           width: 100%;
@@ -84,10 +110,32 @@
       }
     }
   }
+}
 
-  @media (max-width: #{styles.$breakpoint-mobile}) {
-    .Inputs-Nome-Sobrenome {
-      flex-direction: column;
+@media (max-width: #{styles.$breakpoint-tablet}) {
+  .Contato-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    .Contato-div-texto {
+      h2 {
+        font-size: 24px;
+      }
+      div {
+        .Contato-div-texto-Subtexto {
+          font-size: 14px;
+        }
+
+        .Contato-div-texto-textFone {
+          font-size: 12px;
+        }
+
+        .Contato-div-texto-telefone {
+          font-size: 16px;
+        }
+      }
     }
+  }
+  .Inputs-Nome-Sobrenome {
+    flex-wrap: wrap;
   }
 }

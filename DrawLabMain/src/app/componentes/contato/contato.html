@@ -1,7 +1,15 @@
 <div id="Contato" class="Contato-container">
+
   <div class="Contato-div-texto">
-    <h2>Contato</h2>
-    <p>ahsdlajhdaljdhlasjdhlasjhdaljsdhlash</p>
+    <h2>Fale com a gente</h2>
+    <div>
+      <p class="Contato-div-texto-Subtexto">
+      Preencha os campos abaixo e nossa equipe retornará com todas as informações que você precisa
+      para iniciar sua jornada.
+      </p>
+      <p class="Contato-div-texto-textFone">Se preferir, fale diretamente com nossa equipe pelo telefone:</p>
+      <p class="Contato-div-texto-telefone">(11) 4002-8922</p>
+    </div>
   </div>
 
   <div class="Contato-div-formulario">
@@ -9,28 +17,46 @@
       <div class="Inputs-Nome-Sobrenome">
         <div>
           <label for="Nome">Nome <strong>*</strong></label>
-          <input placeholder="Primeiro Nome" required type="text" name="Nome" id="Nome" />
+          <input placeholder="Como podemos te chamar?" required type="text" name="Nome" id="Nome" />
         </div>
         <div>
           <label for="Sobrenome">Sobrenome <strong>*</strong></label>
-          <input placeholder="Sobrenome" required type="text" name="Sobrenome" id="Sobrenome" />
+          <input
+            placeholder="Seu último nome"
+            required
+            type="text"
+            name="Sobrenome"
+            id="Sobrenome"
+          />
         </div>
       </div>
 
       <div class="Input-email">
         <label for="Email">Email <strong>*</strong></label>
-        <input placeholder="Melhor Email" required type="email" name="Email" id="Email" />
+        <input
+          placeholder="Seu melhor email para contato"
+          required
+          type="email"
+          name="Email"
+          id="Email"
+        />
       </div>
 
       <div class="Input-Number">
         <label for="Number">Telefone <strong>*</strong></label>
-        <input placeholder="Telefone para contato" required type="text" name="Number" id="Number" />
+        <input
+          placeholder="Número para falarmos com você"
+          required
+          type="text"
+          name="Number"
+          id="Number"
+        />
       </div>
 
       <div class="Input-selectCurso">
         <label for="Curso">Curso de Interesse <strong>*</strong></label>
         <select id="Curso" name="Curso" required>
-          <option value="" disabled selected>-- Selecione --</option>
+          <option value="" disabled selected>-- Escolha o curso que combina com você --</option>
           <option value="item1">Iniciante Criativo</option>
           <option value="item2">Intermediário em Ação</option>
           <option value="item3">Avançado Profissional</option>
@@ -41,4 +67,5 @@
       <button type="submit">Enviar</button>
     </form>
   </div>
+
 </div>
