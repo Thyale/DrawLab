@@ -1,43 +1,84 @@
 @use '../../../styles.scss' as styles;
 
-.sobre-container{
-    @include styles.ConfigWidthCards();
+.sobre-container {
+  @include styles.ConfigWidthCards();
+  .sobre-content {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
 
-    h2{
-        @include styles.styleH2titulos();
+    div {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+
+      .sobre-container-titulo {
+        color: styles.$Logo-color-Laranja;
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+      .sobre-container-txtImpacto {
+        font-size: 26px;
+        margin-bottom: 12px;
+        color: styles.$Logo-color-Azul;
+      }
+      .sobre-container-text {
+        font-size: 16px;
+        color: styles.$primary-text;
+        font-weight: 300;
+      }
+      .sobre-container-explicando {
+        font-size: 16px;
+        color: styles.$primary-text;
+        font-weight: 300;
+        margin-top: 12px;
+      }
+
+      button {
+        background-color: styles.$Logo-color-Vermelho;
+        color: white;
+        align-self: end;
+        margin-top: 12px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: darken(styles.$Logo-color-Vermelho, 10%);
+        }
+      }
     }
 
-    .sobre-content{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-
-        img{
-            width: 100%;
-            max-width: 500px;
-        }
-
-        p{
-            color: styles.$secondary-text;
-            font-size: 16px;
-            font-weight: 400;
-        }
-
-        div{
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 100%;
-            max-width: 500px
-        }
+    img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
     }
+  }
+  @media (max-width: #{styles.$breakpoint-tablet}) {
+    .sobre-content {
+      flex-direction: column;
+      gap: 0px;
 
-    @media (max-width: #{styles.$breakpoint-mobile}) {
-        .sobre-content{
-            flex-direction: column-reverse;
+      div {
+        max-width: 600px;
+        margin: auto;
+
+        .sobre-container-text {
+          color: styles.$secondary-text;
         }
+
+        button {
+          align-self: self-start;
+        }
+      }
+
+      img {
+        display: none;
+      }
     }
+  }
 }
