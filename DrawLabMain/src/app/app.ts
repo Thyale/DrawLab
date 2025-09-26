@@ -6,10 +6,11 @@ import { Sobre } from './componentes/sobre/sobre';
 import { Depoimentos } from "./componentes/depoimentos/depoimentos";
 import { Preco } from "./componentes/preco/preco";
 import { Contato } from "./componentes/contato/contato";
+import { Footer } from './componentes/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Card, Programas, Sobre, Depoimentos, Preco, Contato],
+  imports: [Header, Card, Programas, Sobre, Depoimentos, Preco, Contato, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

@@ -2,10 +2,9 @@
 
 .Contato-container {
   @include styles.ConfigWidthCards();
-  background: linear-gradient(90deg, #0f222d, #1d3b50);
-  padding: 4em 20px;
+  padding: 3em 20px;
   border-radius: 20px;
-  color: white;
+  color: styles.$primary-text;
   gap: 24px;
 
   display: flex;
@@ -19,17 +18,17 @@
       font-size: 32px;
       font-family: styles.$font-family-primary;
       margin-bottom: 12px;
-      color: white;
+      color: styles.$Logo-color-Azul;
     }
     .Contato-div-texto-Subtexto {
       margin-bottom: 24px;
       font-size: 16px;
-      color: rgba(255, 255, 255, 0.729);
+      color: styles.$primary-text;
     }
 
     .Contato-div-texto-textFone {
       font-size: 14px;
-      font-weight: 200;
+      font-weight: 300;
     }
 
     .Contato-div-texto-telefone {
@@ -69,12 +68,12 @@
         padding: 10px;
         background-color: transparent;
         border-radius: 0;
-        color: white;
+        color: styles.$secondary-text;
         margin-top: 5px;
         outline: none;
 
         &::placeholder {
-          color: rgba(255, 255, 255, 0.6);
+          color: styles.$secondary-text;
         }
       }
 
