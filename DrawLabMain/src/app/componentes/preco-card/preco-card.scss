@@ -1,34 +1,64 @@
 @use '../../../styles.scss' as styles;
 
 .preco-card-base {
-  padding: 40px 30px;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  gap: 10px;
+  padding: 32px 24px;
+  max-width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
+  gap: 24px;
+  transition: all 0.3s ease;
 
-  div{
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  }
+
+  > div {
     h3 {
-        font-family: styles.$font-family-primary;
-        color: styles.$primary-text;
+      font-family: styles.$font-family-primary;
+      color: styles.$primary-text;
+      font-size: 22px;
+      margin-bottom: 4px;
     }
 
     p {
-        color: styles.$secondary-text;
-        font-weight: 200;
+      color: styles.$secondary-text;
+      font-size: 14px;
+      font-weight: 300;
     }
-   }  
+  }
 
-   ul{
+  ul {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-   }
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-   .preco-card-valor{
+    li {
+      position: relative;
+      padding-left: 22px;
+      font-size: 14px;
+      color: styles.$primary-text;
+
+      &::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: styles.$Logo-color-Vermelho;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .preco-card-valor {
+    font-weight: bold;
+    font-size: 28px;
     color: styles.$Logo-color-Laranja;
-    font-size: 24px;
-   }
-
+    margin-top: auto;
+  }
 }

@@ -22,14 +22,11 @@
     }
     
     .Precos-lista {
-        padding-top: 20px;
+        margin: 20px 0px;
         display: flex;
         flex-direction: row;
         gap: 20px;
         flex-wrap: wrap;
-        width: 100%;
-        max-width: 800px;
-        margin: auto;
         justify-content: center;
     }
 
