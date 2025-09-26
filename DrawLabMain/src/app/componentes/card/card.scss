@@ -52,11 +52,11 @@
   }
 
   @media (max-width: #{styles.$breakpoint-tablet}) {
-    padding: 4em 20px; 
+    padding: 4em 0px; 
   }
 
   @media (max-width: #{styles.$breakpoint-mobile}) {
-    padding: 3em 20px; 
+    padding: 3em 0px; 
     h2 {
       font-size: 32px;
       width: 100%;

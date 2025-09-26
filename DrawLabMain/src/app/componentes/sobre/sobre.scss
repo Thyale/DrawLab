@@ -9,6 +9,9 @@
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
+    @media (max-width: #{styles.$breakpoint-tablet}) {
+    padding:  0px; 
+    }
 
     div {
       width: 100%;
